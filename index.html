@@ -15,7 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Webstudio</title>
   </head>
   <body>
@@ -45,7 +48,7 @@
         <address class="contact-link">
           <ul class="list link-address">
             <li class="menu-item">
-              <a class="address-hdr link" href="mailto:info@devstudio.com"
+              <a class="address-hdr-email link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -56,10 +59,106 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobal-menu-open" data-menu-open>
+          <svg class="mobil-menu-burger" width="32" height="22">
+            <use href="./image/icons.svg.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="mobal-menu-container container">
+          <button type="button" class="btn-model-cloused" data-menu-close>
+            <svg class="btn-model-cloused-icon" width="8" height="8">
+              <use href="./image/icons.svg.svg#icon-btn-close"></use>
+            </svg>
+          </button>
+          <div class="menu-mobile-navigsn">
+            <ul class="mobile-header-item list">
+              <li class="hdr-menu">
+                <a class="menu-item-mobile link" href="./portfolio.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="hdr-menu">
+                <a class="menu-item-mobile link" href="./index.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="hdr-menu">
+                <a class="menu-item-mobile link" href="#">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="list mobile-adress-menu">
+              <li class="mobile-adress-tel">
+                <a class="mobile-tel-hdr" href="tel:+11(000)111-11-11"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-adress">
+                <a class="mobile-mail-hdr" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-social-link">
+            <ul class="mbl-icon-menu list">
+              <li>
+                <a
+                  class="mobile-social-menu"
+                  href="https://instagram.com"
+                  rel="noopener noreferrer "
+                  aria-label="instagram link"
+                >
+                  <svg class="social-icon-mobile" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-social-menu"
+                  href="https://twitter.com"
+                  rel="noopener noreferrer "
+                  aria-label="twitter link"
+                >
+                  <svg class="social-icon-mobile" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-social-menu"
+                  href="https://facebook.com"
+                  rel="noopener noreferrer "
+                  aria-label="facebook link"
+                >
+                  <svg class="social-icon-mobile" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-social-menu"
+                  href="https://linkedin.com"
+                  rel="noopener noreferrer "
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-icon-mobile" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <!-- hero section -->
+      <!-- hero section  -->
       <section class="hero hero-section">
         <div class="container conteiner-hero">
           <h1 class="hero-title">Effective Solution for Your Business</h1>
@@ -74,7 +173,7 @@
         <h2 class="visually-hidden">Our Task</h2>
 
         <ul class="list task">
-          <li>
+          <li class="task-mob">
             <div class="task-item">
               <svg class="task-icon" width="64" height="64">
                 <use href="./image/icons.svg.svg#icon-antenna-1"></use>
@@ -88,7 +187,7 @@
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="task-mob">
             <div class="task-item">
               <svg class="task-icon" width="64" height="64">
                 <use href="./image/icons.svg.svg#icon-clock-1"></use>
@@ -101,7 +200,7 @@
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="task-mob">
             <div class="task-item">
               <svg class="task-icon" width="64" height="64">
                 <use href="./image/icons.svg.svg#icon-diagram-1"></use>
@@ -114,7 +213,7 @@
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="task-mob">
             <div class="task-item">
               <svg class="task-icon" width="64" height="64">
                 <use href="./image/icons.svg.svg#icon-astronaut-1"></use>
@@ -137,7 +236,9 @@
           <ul class="list presentation">
             <li class="list-img">
               <img
-                src="./image/gallery/img1.jpg"
+                srcset="./image/gallery/Rectangle 71_desk@1x-2.jpg 1x,
+              ./image/gallery/Rectangle 71_desk@2x-2.jpg 2x"
+                src="./image/gallery/Rectangle 71_desk@1x-2.jpg"
                 alt="Monitor screen image"
                 width="360"
                 height="300"
@@ -145,7 +246,9 @@
             </li>
             <li class="list-img">
               <img
-                src="./image/gallery/img2.jpg"
+                srcset="./image/gallery/Rectangle 71_desk@1x-1.jpg 1x,
+                 ./image/gallery/Rectangle 71_desk@1x-2.jpg 2x"
+                src="./image/gallery/Rectangle 71_desk@1x-1.jpg"
                 alt="Phone screen image"
                 width="360"
                 height="300"
@@ -153,7 +256,10 @@
             </li>
             <li class="list-img">
               <img
-                src="./image/gallery/img3.jpg"
+                srcset="
+              ./image/gallery/Rectangle 71_desk@1x.jpg 1x,
+              ./image/gallery/Rectangle 71_desk@2x.jpg 2x"
+                src="./image/gallery/Rectangle 71_desk@1x.jpg"
                 alt="Phone screen image"
                 width="360"
                 height="300"
@@ -171,14 +277,24 @@
           <ul class="list team-img">
             <li class="card">
               <img
+                srcset="
+                  ./image/team/img_mob@1x.jpg    264w,
+                  ./image/team/img_tab@1x-3.jpg  264w,
+                  ./image/team/img_desk@1x-3.jpg 264w,
+                  ./image/team/img_mob@2x.jpg    528w,
+                  ./image/team/img_tab@2x-3.jpg  528w,
+                  ./image/team/img_desk@2x-3.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px,(min-width: 768px) 264px,(min-width: 480px) 264px, 100vw"
                 src="./image/team/img-3.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="card-name">
-                <h3 class="title-task name">Mark Guerrero</h3>
-                <p class="task-descript profesion">Product Designer</p>
+                <h3 class="title-team name">Mark Guerrero</h3>
+                <p class="team-descript profesion">Product Designer</p>
                 <ul class="social list">
                   <li>
                     <a
@@ -235,14 +351,24 @@
             </li>
             <li class="card">
               <img
+                srcset="
+                  ./image/team/img_mob@1x-1.jpg  264w,
+                  ./image/team/img_tab@1x-2.jpg  264w,
+                  ./image/team/img_desk@1x-2.jpg 264w,
+                  ./image/team/img_mob@2x-1.jpg  528w,
+                  ./image/team/img_tab@2x-2.jpg  528w,
+                  ./image/team/img_desk@2x-2.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px,(min-width: 768px) 264px,(min-width: 480px) 264px, 100vw"
                 src="./image/team/img-2.jpg"
                 alt="Tom Ford Frontend Develope"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="card-name">
-                <h3 class="title-task name">Tom Ford</h3>
-                <p class="task-descript profesion">Frontend Developer</p>
+                <h3 class="title-team name">Tom Ford</h3>
+                <p class="team-descript profesion">Frontend Developer</p>
                 <ul class="social list">
                   <li>
                     <a
@@ -299,14 +425,24 @@
             </li>
             <li class="card">
               <img
+                srcset="
+                  ./image/team/img_mob@1x-2.jpg  264w,
+                  ./image/team/img_tab@1x-1.jpg  264w,
+                  ./image/team/img_desk@1x-1.jpg 264w,
+                  ./image/team/img_mob@2x-2.jpg  528w,
+                  ./image/team/img_tab@2x-1.jpg  528w,
+                  ./image/team/img_desk@2x-1.jpg 528w
+                "
+                sizes="(min-width: 1200px) 264px,(min-width: 768px) 264px,(min-width: 480px) 264px, 100vw"
                 src="./image/team/img-1.jpg"
                 alt="Camila Garcia Marketing"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="card-name">
-                <h3 class="title-task name">Camila Garcia</h3>
-                <p class="task-descript profesion">Marketing</p>
+                <h3 class="title-team name">Camila Garcia</h3>
+                <p class="team-descript profesion">Marketing</p>
                 <ul class="social list">
                   <li>
                     <a
@@ -363,14 +499,24 @@
             </li>
             <li class="card">
               <img
+                srcset="
+                  ./image/team/img_mob@1x-3.jpg 264w,
+                  ./image/team/img_tab@1x.jpg   264w,
+                  ./image/team/img_desk@1x.jpg  264w,
+                  ./image/team/img_mob@2x-3.jpg 528w,
+                  ./image/team/img_tab@2x.jpg   528w,
+                  ./image/team/img_desk@2x.jpg  528w
+                "
+                sizes="(min-width: 1200px) 264px,(min-width: 768px) 264px,(min-width: 480px) 264px, 100vw"
                 src="./image/team/img.jpg"
                 alt="Daniel Wilson UI Designer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="card-name">
-                <h3 class="title-task name">Daniel Wilson</h3>
-                <p class="task-descript profesion">UI Designer</p>
+                <h3 class="title-team name">Daniel Wilson</h3>
+                <p class="team-descript profesion">UI Designer</p>
                 <ul class="social list">
                   <li>
                     <a
@@ -482,89 +628,94 @@
         </div>
       </section>
     </main>
+
     <!-- footer section -->
     <footer class="hero-footer">
       <div class="container sect-footer">
-        <div class="container-footer">
-          <a class="link logo-footer" href="./index.html"
-            >Web<span class="addition-footer">Studio</span></a
-          >
-          <p class="slogan">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="container-link">
-          <h2 class="media">Social media</h2>
-          <ul class="list social-item-footer">
-            <li>
-              <a
-                class="social-link-footer"
-                href="https://instagram.com"
-                rel="noopener noreferrer "
-                aria-label="instagram link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./image/icons.svg.svg#icon-instagram-2"></use>
+        <div class="ftr">
+          <div class="container-footer">
+            <a class="link logo-footer" href="./index.html"
+              >Web<span class="addition-footer">Studio</span></a
+            >
+            <p class="slogan">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+
+          <div class="container-link">
+            <h2 class="media-item">Social media</h2>
+            <ul class="list social-item-footer">
+              <li>
+                <a
+                  class="social-link-footer"
+                  href="https://instagram.com"
+                  rel="noopener noreferrer "
+                  aria-label="instagram link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link-footer"
+                  href="https://twitter.com"
+                  rel="noopener noreferrer "
+                  aria-label="twitter link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link-footer"
+                  href="https://facebook.com"
+                  rel="noopener noreferrer "
+                  aria-label="facebook link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-link-footer"
+                  href="https://linkedin.com"
+                  rel="noopener noreferrer "
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./image/icons.svg.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ftr-form">
+            <p class="media ftr-media">Subscribe</p>
+            <form class="footer-form">
+              <label>
+                <input
+                  type="email"
+                  name="user_email"
+                  class="footer-input"
+                  placeholder="E-mail"
+                  required
+              /></label>
+              <button type="submit" class="btn-footer-form">
+                Subscribe
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./image/icons.svg.svg#icon-icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-link-footer"
-                href="https://twitter.com"
-                rel="noopener noreferrer "
-                aria-label="twitter link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./image/icons.svg.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-link-footer"
-                href="https://facebook.com"
-                rel="noopener noreferrer "
-                aria-label="facebook link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./image/icons.svg.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-link-footer"
-                href="https://linkedin.com"
-                rel="noopener noreferrer "
-                aria-label="linkedin link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./image/icons.svg.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="media">Subscribe</p>
-          <form class="footer-form">
-            <label>
-              <input
-                type="email"
-                name="user_email"
-                class="footer-input"
-                placeholder="E-mail"
-                required
-            /></label>
-            <button type="submit" class="btn-footer-form">
-              Subscribe
-              <svg class="footer-form-icon" width="24" height="24">
-                <use href="./image/icons.svg.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -656,6 +807,8 @@
         </form>
       </div>
     </div>
+    -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/model.js"></script>
   </body>
 </html>
