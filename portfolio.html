@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -53,14 +55,27 @@
               >
             </li>
           </ul>
-        </address>
+        </address> <button
+          type="button"
+          class="mobal-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobil-menu-burger" width="32" height="22">
+            <use href="./image/icons.svg.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
+     
+   </div>
     </header>
     <main>
-      <!-- filtr section -->
-      <section class="filtr-container container">
-        <h1 class="visually-hidden">Picture filtr portfolio</h1>
-        <ul class="list list-button">
+       <!-- filtr section -->
+      <section class=" container">
+        <div class="filtr-container">
+               <h1 class="visually-hidden">Picture filtr portfolio</h1>
+              <div class="btn-section">   
+               <ul class="list list-button">
           <li class="button-filtr">
             <button class="btn-portfolio" type="button">All</button>
           </li>
@@ -76,18 +91,29 @@
           <li class="button-filtr">
             <button class="btn-portfolio" type="button">Marketing</button>
           </li>
-        </ul>
+             </ul>
+            </div>
 
-        <div class="section-portfolio">
+          <div class="section-portfolio">  
           <ul class="list menu-portfolio">
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-8.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-8.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-8.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-8.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-8.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x.jpg"
                       alt="banking interface  image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
 
@@ -98,7 +124,7 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">
+                    <h2 class="title-portf title-descript">
                       Banking App Interface Concept
                     </h2>
                     <p class="task-descript use">App</p>
@@ -108,13 +134,23 @@
             </li>
 
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-7.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-1.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-7.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-7.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-1.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-7.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-7.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-1.jpg"
                       alt="payment by phone image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -124,7 +160,7 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">Cashless Payment</h2>
+                    <h2 class="title-portf title-descript">Cashless Payment</h2>
                     <p class="task-descript use">Marketing</p>
                   </div></a
                 >
@@ -132,13 +168,23 @@
             </li>
 
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-6.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-2.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-6.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-6.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-2.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-6.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-6.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-2.jpg"
                       alt="laptop phone screen image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -148,20 +194,30 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">Meditaion App</h2>
+                    <h2 class="title-portf title-descript">Meditaion App</h2>
                     <p class="task-descript use">App</p>
                   </div></a
                 >
               </div>
             </li>
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-5.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-3.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-5.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-5.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-3.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-5.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-5.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-3.jpg"
                       alt="taxi image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -171,20 +227,30 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">Taxi Service</h2>
+                    <h2 class="title-portf title-descript">Taxi Service</h2>
                     <p class="task-descript use">Marketing</p>
                   </div></a
                 >
               </div>
             </li>
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-4.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-4.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-4.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-4.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-4.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-4.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-4.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-4.jpg"
                       alt="phone screen image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -194,7 +260,7 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">
+                    <h2 class="title-portf title-descript">
                       Screen Illustrations
                     </h2>
                     <p class="task-descript use">Design</p>
@@ -204,13 +270,23 @@
             </li>
 
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-3.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-5.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-3.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-3.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-5.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-3.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-3.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-5.jpg"
                       alt="girl image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -220,20 +296,30 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">Online Courses</h2>
+                    <h2 class="title-portf title-descript">Online Courses</h2>
                     <p class="task-descript use">Marketing</p>
                   </div></a
                 >
               </div>
             </li>
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-2.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-6.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-2.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-2.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-6.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-2.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-2.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-6.jpg"
                       alt="gallery images instagram"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -243,7 +329,7 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">
+                    <h2 class="title-portf title-descript">
                       Instagram Stories Concept
                     </h2>
                     <p class="task-descript use">Design</p>
@@ -252,13 +338,23 @@
               </div>
             </li>
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img-1.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-7.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x-1.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x-1.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-7.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x-1.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x-1.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-7.jpg"
                       alt="organic food image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -268,20 +364,30 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task">Organic Food</h2>
+                    <h2 class="title-portf">Organic Food</h2>
                     <p class="task-descript">Web Site</p>
                   </div></a
                 >
               </div>
             </li>
             <li class="portfolio-image">
-              <div>
+              <div class="portfolio-card">
                 <a class="link card-prtf card-prtf-list" href="#"
                   ><div class="card-wrapper">
                     <img
-                      src="./image/gallery-potfolio/img.jpg"
+                    srcset="
+                    ./image/gallery-potfolio/img_mobp@1x-8.jpg 396w,
+                    ./image/gallery-potfolio/img_tab@1x.jpg 356w,
+                    ./image/gallery-potfolio/img_deskp@1x.jpg 360w,
+                    ./image/gallery-potfolio/img_mobp@2x-8.jpg 792w
+                    ./image/gallery-potfolio/img_tabp@2x.jpg 712w,
+                    ./image/gallery-potfolio/img_deskp@2x.jpg 720w
+                    
+                    "
+                    sizes="(min-width: 1200px) 360px,(min-width: 768px) 356px,(min-width: 480px) 396px, 100vw"
+                      src="./image/gallery-potfolio/img_mobp@1x-8.jpg"
                       alt="cup coffee image"
-                      width="360"
+                      width="396"
                       height="300"
                     />
                     <p class="overlay">
@@ -291,7 +397,7 @@
                     </p>
                   </div>
                   <div class="brd-clr">
-                    <h2 class="title-task title-descript">Fresh Coffee</h2>
+                    <h2 class="title-portf title-descript">Fresh Coffee</h2>
                     <p class="task-descript use">Web Site</p>
                   </div></a
                 >
@@ -299,11 +405,13 @@
             </li>
           </ul>
         </div>
+      </div>
       </section>
     </main>
     <!-- footer section -->
-    <footer class="hero-footer">
-      <div class="container sect-footer">
+    <footer class="hero-footer sect-footer">
+      <div class="container">
+        <div class="ftr">
         <div class="container-footer">
           <a class="link logo-footer" href="./index.html"
             >Web<span class="addition-footer">Studio</span></a
@@ -366,7 +474,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="ftr-form">
           <p class="media">Subscribe</p>
           <form class="footer-form">
             <label>
@@ -386,6 +494,206 @@
           </form>
         </div>
       </div>
+      </div>
     </footer>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="black"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+        >
+          <path
+            fill-rule="white"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="menu-mobile-navigsn">
+        <ul class="mobile-header-item list">
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="./portfolio.html">Studio</a>
+          </li>
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="./index.html">Portfolio</a>
+          </li>
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="#">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-adress-menu">
+          <li class="mobile-adress-tel">
+            <a class="mobile-tel-hdr link" href="tel:+11(000)111-11-11"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-adress">
+            <a class="mobile-mail-hdr" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-social-link">
+        <ul class="mbl-icon-menu list">
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://instagram.com"
+              rel="noopener noreferrer "
+              aria-label="instagram link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://twitter.com"
+              rel="noopener noreferrer "
+              aria-label="twitter link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://facebook.com"
+              rel="noopener noreferrer "
+              aria-label="facebook link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://linkedin.com"
+              rel="noopener noreferrer "
+              aria-label="linkedin link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="black"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+        >
+          <path
+            fill-rule="white"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="menu-mobile-navigsn">
+        <ul class="mobile-header-item list">
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="./index.html">Studio</a>
+          </li>
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="./index.html">Portfolio</a>
+          </li>
+          <li class="hdr-menu">
+            <a class="menu-item-mobile link" href="#">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-adress-menu">
+          <li class="mobile-adress-tel">
+            <a class="mobile-tel-hdr link" href="tel:+11(000)111-11-11"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-adress">
+            <a class="mobile-mail-hdr link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-social-link">
+        <ul class="mbl-icon-menu list">
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://instagram.com"
+              rel="noopener noreferrer "
+              aria-label="instagram link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://twitter.com"
+              rel="noopener noreferrer "
+              aria-label="twitter link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://facebook.com"
+              rel="noopener noreferrer "
+              aria-label="facebook link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="mobile-social-menu"
+              href="https://linkedin.com"
+              rel="noopener noreferrer "
+              aria-label="linkedin link"
+            >
+              <svg class="social-icon-mobile" width="24" height="24">
+                <use href="./image/icons.svg.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
