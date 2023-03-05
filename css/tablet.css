@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 767px;
+        width: 768px;
     }
 
 
@@ -73,6 +73,7 @@
     .current:hover::after,
     .current:focus::after {
         display: block;
+
     }
 
     .contact-link {
@@ -80,9 +81,7 @@
 
     }
 
-    .link-address {
-        padding: 24px 0 12px;
-    }
+
 
 
 
@@ -126,6 +125,7 @@
 /* =============hero===================== */
 @media screen and (min-width: 768px) {
     .hero {
+        padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/bcg-img/people-office\ 1_desk@1x.jpg);
     }
 
@@ -141,9 +141,7 @@
 @media screen and (min-width: 768px) {
 
 
-    .conteiner-hero {
-        padding: 112px 0 108px;
-    }
+
 
     .hero-title {
         width: 496px;
@@ -174,6 +172,12 @@
         flex-direction: column;
 
     }
+
+    .title-task {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* ===================team====================== */
@@ -195,17 +199,6 @@
         flex-wrap: wrap;
     }
 
-    /* .sect-footer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: baseline;
-
-    } */
-
-    /* .conteiner-footer {
-        margin-right: 24px;
-    } */
 
     .slogan {
         margin: 0;

@@ -58,12 +58,10 @@
 /* =============hero============ */
 @media screen and (min-width: 1200px) {
     .hero {
-        padding: 0;
-    }
-
-    .conteiner-hero {
         padding: 188px 0 188px;
     }
+
+
 
     .hero-title {
         width: 496px;
@@ -86,7 +84,7 @@
 
 
     .section-task {
-        padding: 120px 0 108px;
+        padding: 120px 0;
     }
 
     .task-mob {

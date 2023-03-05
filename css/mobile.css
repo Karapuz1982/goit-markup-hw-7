@@ -82,22 +82,178 @@ button {
 
 .container {
 
-
+    min-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+    .hero-title {
+
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40 / 36);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+
+        color: var(--prymery-txt-backgnd-cl)
+    }
+
+    .mobile-tel-hdr {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: calc(30 / 24);
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--prymery-txt-cl);
+        width: 100%;
+
+
+
+    }
+
+
+
+    .mbl-icon-menu {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-mobile-navigsn {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
+    }
+
+    .slogan {
+        text-align: center;
+        width: 264px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        letter-spacing: 0.02em;
+        color: var(--secondy-txt-backgnd-cl);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        min-height: 576px;
+        background-color: var(--backgrnd-modal);
+        box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 3px 0px 1px rgba(0, 0, 0, 0.12), 1px0px,
+            1px rgba(0, 0, 0, 0.14);
+        padding: 72px 24px;
+    }
+}
+
+.model-btn {
+
+    font-family: var(--prymery-fonts);
+    padding: 16px 32px;
+    background: var(--color-iris);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+
+
+    color: var(--btn-link-cl);
+    transition: background-color var(--transition-duration-and-funk);
 
 }
+
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.model-btn:hover,
+.model-btn:focus {
+    background-color: var(--color-ocean);
+
+}
+
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.model-btn:hover,
+.model-btn:focus {
+    background-color: var(--color-ocean);
+
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:480px) {
     .container {
         width: 428px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 }
 
 
+
 /* ==============header=================== */
+
+
+
+@media screen and (min-width: 480px) {
+    .mobile-tel-hdr {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40 / 36);
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--prymery-txt-cl);
+        width: 100%;
+    }
+
+
+
+
+
+    .mbl-icon-menu {
+        display: flex;
+        gap: 56px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal {
+        width: 392px;
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     .menu {
         display: none;
@@ -350,13 +506,7 @@ button {
         color: var(--btn-backgnd-cl);
     }
 
-    .menu-mobile-navigsn {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 48px;
 
-
-    }
 
     .mobile-social-menu:hover,
     .mobile-social-menu:focus {
@@ -367,25 +517,14 @@ button {
         margin-bottom: 40px;
     }
 
-    .mobile-tel-hdr {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: calc(40 / 36);
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: var(--prymery-txt-cl);
-        width: 100%;
-
-
-
-    }
 
 
     .mobile-header-item {
-        margin-bottom: 284px;
+        margin-bottom: auto;
     }
 
     .mobile-social-menu {
+        margin-top: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -400,13 +539,39 @@ button {
         fill: var(--color-cloud);
     }
 
-    .mbl-icon-menu {
-        display: flex;
-        gap: 56px;
-        justify-content: center;
-        align-items: center;
-    }
 }
+
+
+
+
+/* .mobile-tel-hdr {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--prymery-txt-cl);
+    width: 100%;
+}
+
+
+
+
+
+.mbl-icon-menu {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -430,7 +595,7 @@ button {
 /* ==============hero================== */
 .hero {
     background: var(--backgnd-cl);
-
+    padding: 112px 0;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -444,6 +609,7 @@ button {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
+
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/bcg-img/Dark-bg_mob@2x.jpg);
     }
 }
@@ -460,68 +626,67 @@ button {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/bcg-img/Dark-bg_tab@2x.jpg);
         }
     }
-}
-
-.conteiner-hero {
-    padding: 112px 0;
-}
-
-.hero-title {
-    width: 320px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 72px;
-
-    color: var(--prymery-txt-backgnd-cl);
-}
-
-.model-btn {
-
-    font-family: var(--prymery-fonts);
-    padding: 16px 32px;
-    background: var(--color-iris);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;
 
 
-    color: var(--btn-link-cl);
-    transition: background-color var(--transition-duration-and-funk);
 
-}
 
-.hero-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .hero-title {
+        width: 320px;
 
-.model-btn:hover,
-.model-btn:focus {
-    background-color: var(--color-ocean);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(40 / 36);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
 
-}
+        color: var(--prymery-txt-backgnd-cl);
+    }
 
-.hero-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    /* .model-btn {
 
-.model-btn:hover,
-.model-btn:focus {
-    background-color: var(--color-ocean);
+        font-family: var(--prymery-fonts);
+        padding: 16px 32px;
+        background: var(--color-iris);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
 
+
+        color: var(--btn-link-cl);
+        transition: background-color var(--transition-duration-and-funk);
+
+    }
+
+    .hero-button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .model-btn:hover,
+    .model-btn:focus {
+        background-color: var(--color-ocean);
+
+    }
+
+    .hero-button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .model-btn:hover,
+    .model-btn:focus {
+        background-color: var(--color-ocean);
+
+    } */
 }
 
 /* =====task============= */
@@ -792,7 +957,8 @@ button {
 
 }
 
-.slogan {
+/* .slogan {
+    text-align: center;
     width: 264px;
     font-weight: 400;
     font-size: 16px;
@@ -802,7 +968,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-}
+} */
 
 .media-item {
     display: flex;
@@ -944,7 +1110,7 @@ button {
     pointer-events: none;
 }
 
-.modal {
+/* .modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -955,7 +1121,7 @@ button {
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 3px 0px 1px rgba(0, 0, 0, 0.12), 1px0px,
         1px rgba(0, 0, 0, 0.14);
     padding: 72px 24px;
-}
+} */
 
 .modal-btn {
     position: absolute;
