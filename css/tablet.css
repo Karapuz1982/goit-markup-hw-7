@@ -35,11 +35,10 @@
         display: flex;
         align-self: center;
         padding: 24px 0;
+        gap: 40px;
     }
 
-    .menu-item:not(:last-child) {
-        margin-right: 40px
-    }
+
 
     .menu-link {
         position: relative;
@@ -70,16 +69,11 @@
         transition: var(--transition-duration-and-funk);
     }
 
-    .current:hover::after,
-    .current:focus::after {
+    .current::after {
         display: block;
 
     }
 
-    .contact-link {
-        margin-left: auto;
-
-    }
 
 
 
@@ -219,6 +213,8 @@
     .media-item {
         display: block;
     }
+
+
 
     .media {
         display: block;

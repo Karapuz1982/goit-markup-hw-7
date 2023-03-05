@@ -89,6 +89,8 @@ button {
     margin-right: auto;
 }
 
+
+
 @media screen and (min-width: 320px) {
     .hero-title {
 
@@ -121,7 +123,7 @@ button {
     .mbl-icon-menu {
         display: flex;
         gap: 24px;
-        justify-content: center;
+
         align-items: center;
     }
 
@@ -157,6 +159,43 @@ button {
         box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 3px 0px 1px rgba(0, 0, 0, 0.12), 1px0px,
             1px rgba(0, 0, 0, 0.14);
         padding: 72px 24px;
+    }
+
+    .client {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 16px;
+        justify-content: center;
+    }
+
+    .client-link {
+        width: 128px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        border: 1px solid var(--color-light-slate);
+        transition: border-color var(--transition-duration-and-funk);
+    }
+
+    .client-icon {
+
+        fill: var(--color-light-slate);
+        transition: fill var(--transition-duration-and-funk);
+    }
+
+    .client-link:hover .client-icon,
+    .client-link:focus .client-icon {
+
+        fill: var(--btn-backgnd-cl);
+
+    }
+
+    .client-link:hover,
+    .client-link:focus {
+        border-color: var(--btn-backgnd-cl);
+
     }
 }
 
@@ -237,14 +276,21 @@ button {
         width: 100%;
     }
 
+    .client-link {
+        width: 168px;
+        height: 88px;
+    }
 
+    .slogan {
+        text-align: left;
+    }
 
 
 
     .mbl-icon-menu {
         display: flex;
         gap: 56px;
-        justify-content: center;
+
         align-items: center;
     }
 
@@ -468,6 +514,10 @@ button {
         pointer-events: auto;
     }
 
+    .mobile-adress-menu {
+        margin-bottom: 48px;
+    }
+
 
     .hdr-menu:not(:last-child) {
         margin-bottom: 40px;
@@ -524,7 +574,7 @@ button {
     }
 
     .mobile-social-menu {
-        margin-top: 48px;
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -879,7 +929,7 @@ button {
     justify-content: center;
 }
 
-.client-link {
+/* .client-link {
     width: 168px;
     height: 88px;
     display: flex;
@@ -888,7 +938,7 @@ button {
     border-radius: 4px;
     border: 1px solid var(--color-light-slate);
     transition: border-color var(--transition-duration-and-funk);
-}
+} */
 
 .client-icon {
 
