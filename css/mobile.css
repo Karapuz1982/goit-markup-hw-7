@@ -81,13 +81,14 @@ button {
 }
 
 .container {
-
+    max-width: 428px;
     min-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 
@@ -108,7 +109,7 @@ button {
     .mobile-tel-hdr {
         font-weight: 700;
         font-size: 24px;
-        line-height: calc(30 / 24);
+        line-height: calc(40 / 24);
         letter-spacing: 0.02em;
         text-align: center;
         color: var(--prymery-txt-cl);
@@ -252,12 +253,12 @@ button {
 
 
 
-@media screen and (min-width:480px) {
+/* @media screen and (min-width:480px) {
     .container {
         width: 428px;
 
     }
-}
+} */
 
 
 
@@ -265,7 +266,7 @@ button {
 
 
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
     .mobile-tel-hdr {
         font-weight: 700;
         font-size: 36px;
@@ -418,7 +419,7 @@ button {
         left: 0;
         width: 100vw;
         height: 100vh;
-        padding: 32px;
+        padding: 80px 32px 32px;
         background-color: var(--color-white);
         ;
         z-index: 999;

@@ -8,18 +8,20 @@
         display: none;
     }
 
+    .page-heder-conteiner {
+        display: flex;
+        align-self: center;
+
+    }
+
 }
 
 
-.page-heder-conteiner {
-    display: flex;
-    align-self: center;
 
-}
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 
 
@@ -36,6 +38,7 @@
         align-self: center;
         padding: 24px 0;
         gap: 40px;
+
     }
 
 
@@ -57,6 +60,10 @@
 
     }
 
+    .contact-link {
+        margin-left: auto;
+    }
+
     .current::after {
         content: '';
         display: none;
@@ -65,7 +72,7 @@
         height: 4px;
         border-radius: 2px;
         background-color: var(--color-ocean);
-        bottom: 0;
+        bottom: -3px;
         transition: var(--transition-duration-and-funk);
     }
 
