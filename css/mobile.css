@@ -198,6 +198,10 @@ button {
         border-color: var(--btn-backgnd-cl);
 
     }
+
+    .container-footer {
+        text-align: center;
+    }
 }
 
 .model-btn {
@@ -298,6 +302,7 @@ button {
     .modal {
         width: 392px;
     }
+
 
 }
 
@@ -547,9 +552,8 @@ button {
 
     }
 
-    .mobile-tel-hdr:hover,
-    .mobile-tel-hdr:focus {
-        color: var(--btn-backgnd-cl);
+    .mobile-tel-hdr {
+        color: var(--secondy-txt-cl);
     }
 
     .mobile-mail-hdr:hover,
@@ -979,18 +983,18 @@ button {
 
 .logo-footer {
     display: flex;
+    gap: 16;
     align-items: center;
     justify-content: center;
     font-family: var(--secondy-fonts);
     font-weight: 800;
     font-size: 18px;
     line-height: calc(24 / 18);
-    margin-left: auto;
-    margin-right: auto;
+
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     color: var(--secondy-txt-cl);
 }
 
@@ -1182,7 +1186,7 @@ button {
     align-items: center;
     justify-content: center;
     border: 1px;
-    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25); */
     background-color: var(--color-cornflower);
     width: 24px;
     height: 24px;
@@ -1349,6 +1353,8 @@ button {
     align-self: center;
     transition: var(--transition-duration-and-funk);
     color: var(--btn-link-cl);
+    width: 169px;
+    height: 56px;
 }
 
 .model-form-submit:hover,

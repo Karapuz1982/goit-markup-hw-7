@@ -188,6 +188,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
+        /* justify-content: space-around; */
     }
 
     .section {
@@ -218,7 +219,7 @@
     }
 
     .media-item {
-        display: block;
+        display: block
     }
 
 
@@ -230,10 +231,12 @@
 
     .ftr-media {
         display: block;
+
     }
 
     .logo-footer {
         display: block;
+
     }
 
     .ftr-form {

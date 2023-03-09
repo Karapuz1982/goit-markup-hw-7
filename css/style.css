@@ -179,6 +179,13 @@
         padding: 120px 0;
     }
 
+    .team-img {
+        flex-wrap: none;
+        flex-direction: none;
+        gap: none;
+        justify-content: space-around;
+    }
+
     .customers-sectn {
         padding: 120px 0 120px;
     }
@@ -203,7 +210,11 @@
     }
 
     .ftr {
+        display: flex;
+        justify-content: space-around;
         gap: 0;
+        flex-direction: none;
+        flex-wrap: none;
     }
 
 
@@ -214,7 +225,7 @@
 
     .container-link {
         display: block;
-        margin: 0 auto 0;
+        margin: 0 80px 120px;
         justify-content: baseline;
         align-items: center;
     }
